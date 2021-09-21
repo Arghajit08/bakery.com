@@ -1,0 +1,280 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./photos/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+}
+@media screen and (max-width: 420px) {
+    
+
+}
+nav{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 2.5em;
+    color:white;
+    border-radius: 25%;
+    backdrop-filter: blur(50px);
+    position: relative;
+    width: 155px;
+    height: 50px;
+    margin: 30px;
+    font-family: 'Segoe UI';
+    background: linear-gradient(to left,rgba(255,255,255,0.15),transparent);
+    transform: translateX(0);
+    transition: 0.5s;
+
+}
+.menu{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.menu .btn{
+    position: relative;
+    width: 155px;
+    height: 50px;
+    margin: 20px;
+    font-family: 'Segoe UI';
+
+}
+.menu .btn a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+.menu .btn:hover a{
+    letter-spacing: 3px;
+}
+.menu .btn a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left,rgba(255,255,255,0.15),transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+.menu .btn:hover a::before{
+    transform: skewX(45deg) translateX(200%);
+}
+.menu .btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.menu .btn:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+.menu .btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.menu .btn:hover::after{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+.menu .btn:nth-child(2)::before,
+.menu .btn:nth-child(2)::after{
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45;
+}
+.menu .btn:nth-child(3)::before,
+.menu .btn:nth-child(3)::after{
+    background: #2bd2ff;
+    box-shadow: 0 0 5px #2bd2ff,
+    0 0 15px #2bd2ff,
+    0 0 30px #2bd2ff,
+    0 0 60px #2bd2ff;
+}
+.menu .btn:nth-child(1)::before,
+.menu .btn:nth-child(1)::after{
+    background: #ff1f71;
+    box-shadow: 0 0 5px #ff1f71,
+    0 0 15px #ff1f71,
+    0 0 30px #ff1f71,
+    0 0 60px #ff1f71;
+}
+section{
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(9px);
+    text-align: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section h1{
+    color: white;
+    font-size: 3.7em;
+    font-family: sans-serif;
+}
+section h1 span{
+    color:chartreuse;
+}
+section .btn{
+    position: relative;
+    width: 155px;
+    height: 50px;
+    margin: 20px;
+    font-family: 'Segoe UI';
+
+}
+section .btn a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+section .btn:hover a{
+    letter-spacing: 3px;
+}
+section .btn a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left,rgba(255,255,255,0.15),transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+section .btn:hover a::before{
+    transform: skewX(45deg) translateX(200%);
+}
+section .btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+section .btn:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+section .btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+section .btn:hover::after{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+section .btn:nth-child(1)::before,
+section .btn:nth-child(1)::after{
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45;
+}
+p{
+    color: gold;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+    line-height: 25px;
+}
